@@ -1,6 +1,15 @@
 import React from "react";
 import { FaCaretDown, FaTh, FaBell, FaHome } from "react-icons/fa";
 
+const IconButton = ({children}) => {
+  return (
+    <button
+      className="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none"
+    >
+      {children}
+    </button>
+  )}
+
 const Navbar = () => {
   return (
     <nav className="bg-white shadow flex items-center justify-between px-6 py-4">
@@ -21,16 +30,9 @@ const Navbar = () => {
           <span className="text-sm text-gray-700 font-medium">Vijayragav</span>
         </div>
 
-        {/* Icon buttons */}
-        <button className="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none">
-          <FaTh size={16} />
-        </button>
-        <button className="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none">
-          <FaBell size={16} />
-        </button>
-        <button className="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none">
-          <FaHome size={16} />
-        </button>
+        <IconButton> <FaTh size={16} /></IconButton>
+        <IconButton> <FaBell size={16} /></IconButton>
+        <IconButton> <FaHome size={16} /></IconButton>
       </div>
     </nav>
   );
