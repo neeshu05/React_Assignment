@@ -38,7 +38,7 @@ const WarrantyStatusCard = ({label, data}) => {
           </ResponsiveContainer>
         </div>
 
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 gap-4 min-h-[120px]">
           {WARRANTY_DATA.map((item, index) => (
             <div
               key={index}

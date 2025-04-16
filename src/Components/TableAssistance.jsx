@@ -2,7 +2,7 @@ import React from "react";
 
 const NeedAttentionTable = () => {
   return (
-    <div className="bg-white rounded-xl shadow px-8 py-6 w-full">
+    <div className="bg-white rounded-xl shadow px-8 py-6 w-full mt-4">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-lg font-semibold">Need Attention</h2>
